@@ -1,0 +1,246 @@
+.header{
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 15px;
+  @media screen and (min-width: 768px) {
+     padding-bottom: 26px;
+     padding-top: 26px;
+  } 
+  @media screen and (min-width:1200px)
+    {
+      padding-top:  24px;
+    padding-bottom: 25px; 
+    }
+    margin: 0 auto;
+    border: 1px solid #ECECEC;
+  }
+  .title-header {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    text-decoration: none;
+    margin-right: 93px;
+    
+  }
+
+  @media screen and (min-width: 320px) {
+    .header-connect{
+      display: none;
+    }
+    .pages-list{
+      display: none;
+    }
+ } 
+
+
+
+  .studio-title-header {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-decoration: none;
+  }
+
+.page-item{
+align-items: center;
+display: flex;
+& + & {
+  margin-left: 50px;
+}
+}
+
+
+
+
+ .navigation{
+   display: flex;
+
+ 
+ }
+  
+   
+  .link-page {
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+    transition: color 250ms linear;
+    &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+  }
+  
+  .link-page.current {
+    color: #2196f3;
+  }
+ 
+  .contact-header-link{ 
+    margin-left: 30px;
+  align-items: center;
+  text-decoration: none;
+    
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+   text-align: center;
+   transition-property: color ;
+   transition-duration: 250ms;
+   transition-timing-function: linear;
+   &:focus,
+  &:hover{
+    color: #2196f3;
+  }
+}
+
+.contact-header-link:focus,
+.contact-header-link:hover  {
+  fill: #2196f3;
+}
+ 
+  
+  .icon-header-tel{
+   align-items: center;
+   fill: currentColor;
+   margin-right: 10px;
+  }
+  .icon-header-mail{
+    align-items: center;
+   fill: currentColor;
+    margin-right: 10px;
+  }   
+
+  .btn-mobile{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border:transparent;
+    outline: transparent;
+    z-index: 99;
+    }
+   
+  
+
+   .btn-mobile-menu .menu-btn{
+   fill: #212121;
+    width: 40px;
+    height: 40px;
+  }
+  .menu-btn-open{
+    transform : scale(1);
+      opacity: 1;
+transition: opacity 400ms ease , transform 400ms ease;
+    }
+     
+    .menu-btn-close{
+      opacity: 0;
+      transform: scale(0.3);
+      transition: opacity 400ms ease , transform 400ms ease;
+    }
+  
+
+    .btn-mobile.is-active .menu-btn-open{
+    opacity: 0;
+transform: scale(0.3);
+  }
+  .btn-mobile.is-active .menu-btn-close{
+    opacity: 1;
+    transform : scale(1);
+  }
+  
+  @media screen and (min-width:768px){
+    .container{
+     display: flex;
+     align-items: center;
+    }
+    .btn-mobile{
+      display: none;
+    }
+    .mobile-menu{
+      display: none;
+    }
+    .pages-list{
+
+ 
+      display: flex;
+      list-style-type: none;
+    }
+    .header-connect{
+      display: flex;
+      flex-direction: column;
+ margin-left: auto;
+ list-style-type: none;
+ gap: 10px;
+    }
+.header-current{
+position: relative;
+color:#2196f3;
+
+&::after{
+content: "";
+position: absolute;
+width: 100%;
+height: 4px;
+background: #2196F3;
+border-radius: 2px;
+left: 0;
+bottom: -42px;
+}
+}
+
+@media screen and (min-width:1200px){
+  .container{
+    display: flex;
+    align-items: center;
+  }
+  .header-connect{
+    gap: 30px;
+    flex-direction: row;
+
+}
+
+  .icon-header-tel{
+   width: 10px;
+   height: 16px;
+   
+  }
+  .icon-header-mail{
+    width: 16px;
+    height: 12px;
+  }
+  .header-current{
+    position: relative;
+    color:#2196f3;
+    
+    &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+    left: 0;
+    bottom: -32px;
+  }
+}
+}
+  }

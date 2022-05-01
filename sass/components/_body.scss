@@ -1,0 +1,55 @@
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    button{
+      cursor: pointer;
+    }
+    .container{
+       display: flex;
+      width: 480px;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      
+      .content{
+        width: 480px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+
+      
+align-items: center;
+      @media  screen and (max-width:767px){
+        justify-content: space-between;
+      }
+
+
+      @media  screen and (min-width:768px) {
+        width: 768px;
+      }
+      @media  screen and (min-width:1200px) {
+        width: 1200px;
+      
+      }
+    }
+    img{
+      display: block;
+      max-width: 100%;
+        height: auto;
+    }
+    body {
+        color: #212121;
+        background: #ffffff;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+      }
+      section{
+      padding-top: 94px;
+       padding-bottom: 94px;
+      }

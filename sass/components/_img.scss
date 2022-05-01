@@ -1,0 +1,29 @@
+.hero{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url("../images/imgindex/hero-mobile.png");
+ 
+
+
+   @include mq(retina){
+    background-image: url("../images/imgindex/hero-mobile@2.png");
+
+   }
+@include mq(tablet) {
+    background-image: url("../images/imgindex/hero-table.png");
+
+    @include mq(retina){
+        background-image: url("../images/imgindex/hero-table.png");
+    }
+}
+
+@include mq(desktop) {
+    background-image: url("../images/imgindex/hero-desk.png");
+
+    @include mq(retina){
+        background-image: url("../images/imgindex/hero-desk@2.png");
+    }
+}
+
+}
